@@ -1,11 +1,17 @@
 package com.generation.blogPessoal.model;
 
-public class UsuarioLogin {
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-private String nome;
-	
+public class UsuarioLogin {
+	@NotNull
+	@Size(min = 6,max = 100)
+    private String nome;
+	@NotNull
+	@Size(min = 6,max = 100)
 	private String usuario;
-	
+	@NotNull
+	@Size(min = 6,max = 100)
 	private String senha;
 	
 	private String token;
