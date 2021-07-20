@@ -1,0 +1,113 @@
+body{
+   background-color: rgba(14, 13, 13, 0.945);
+}
+
+.center {
+    text-align: center;
+ }
+ 
+ .justify{
+    text-align: left;
+    color: blanchedalmond;
+    font-size: 20px;
+    
+ }
+ 
+ .container {    
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-right: 30px;
+    margin-left: 30px;
+ }  
+
+
+ .menu li {
+    padding: 30px;
+    background-color: black;
+ }
+ 
+ .menu li a {
+    text-decoration: none;
+    color: #3c118d;
+    font-size: 30px;
+ }
+ 
+ .menu li a:hover {
+    color: rgb(127, 128, 83);
+ }
+ 
+ .p-50 {
+    padding: 50px;
+ }
+ 
+ .br{
+    border-radius: 2%;
+
+ }
+ 
+ .tm-social {
+    width: 50px;
+    height: 50px;
+ }
+ 
+ .ml-100{
+    margin-left: 50px;
+ }
+
+ .mr-100{
+    margin-right: 50px;
+ }
+
+ .mb-100{
+    margin-bottom: 50px;
+ }
+
+ .mt{
+    margin-top: 100px;
+ }
+
+.games{
+   display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.games0{
+   background-color: black;
+}
+.games1{
+   margin-top: 75px;
+}
+/*Discord*/
+@keyframes discord {
+	0% {height:70px; width:250px;}
+	 100% {height:500px;width:350px;}
+}
+@keyframes discord-c {
+	0% {height:500px;width:350px;}
+    100% {height:70px; width:250px;}
+}
+.discord {
+	animation-name: discord-c;
+	animation-duration: 2s;
+	animation-play-state: pause;
+	float:right;
+    height:70px;
+	width:250px;
+   
+	
+}
+
+.discord:hover {
+	height:500px;
+	width:350px;
+	float:right;
+	animation-name: discord;
+	animation-duration: 2s;
+	animation-play-state: pause;
+}
